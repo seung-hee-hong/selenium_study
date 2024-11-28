@@ -30,13 +30,13 @@ class Mypage(unittest.TestCase):
             EC.element_to_be_clickable((By.XPATH, '//*[@id="email"]'))
         )
         id_box.click()
-        id_box.send_keys("seunghee.hong@myrealtrip.com")
+        id_box.send_keys("email")
 
         pw_box = WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, '//*[@id="password"]'))
         )
         pw_box.click()
-        pw_box.send_keys("akflxm0130")
+        pw_box.send_keys("pw")
 
         login_btn = self.driver.find_element(By.XPATH, '//*[@id="__next"]/main/div/div[1]/form/div[4]/div/button[1]')
         login_btn.click()
